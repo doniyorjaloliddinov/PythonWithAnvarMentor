@@ -1,0 +1,2 @@
+writing to files in python and reading them
+pickle module is used to read and write binaries 

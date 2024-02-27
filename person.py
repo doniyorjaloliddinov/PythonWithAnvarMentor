@@ -13,6 +13,9 @@ class Person:
 
     def get_info(self):
         return f"Hello my name is {self.name}!"
+    
+    def __repr__(self) -> str:
+        return f"{self.name.title()} was born in {self.b_year}"
 
     @classmethod
     def get_cuantity_of_people(cls):

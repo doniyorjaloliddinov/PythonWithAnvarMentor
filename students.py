@@ -9,6 +9,12 @@ class Student:
         self.__gender = gender
         Student.__cuantity_of_students +=1
 
+    def __repr__(self) -> str:
+        return f"{self.name.title()} is {self.grade} grade"
+    
+    def __eq__(self,grade) -> bool:
+        return self.grade == grade
+
     def get_gender(self):
         return self.__gender
     
